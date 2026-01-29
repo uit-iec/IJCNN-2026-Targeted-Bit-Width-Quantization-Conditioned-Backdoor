@@ -1,1 +1,1 @@
-# 2024-SE-11-Targeted-Bit-Width-Quantization-Conditioned-Backdoor
+# IJCNN-2026-Targeted-Bit-Width-Quantization-Conditioned-Backdoor
