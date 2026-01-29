@@ -1,0 +1,17 @@
+network : MobileNetV2
+trained : scratch
+pathnet : 
+  cifar10 : 
+    scratch : ""
+    pretrained : ${hydra:runtime.cwd}/models/cifar10/train/MobileNetV2_cifar10_200_SGD_pretrained.pth
+  cifar100 :
+    scratch : "" 
+    pretrained : ${hydra:runtime.cwd}/models/cifar100/train/MobileNetV2_cifar100_200_SGD_pretrained.pth
+classes : 
+  cifar10 : 10
+  cifar100 : 100
+datnorm : True 
+lossfunc : cross-entropy
+optimizer : Adam-Multi
+w_qmode : per_layer_symmetric
+a_qmode : per_layer_asymmetric
